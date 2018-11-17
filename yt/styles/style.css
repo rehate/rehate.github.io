@@ -236,8 +236,17 @@ body {
 @media (max-width: 740px) {
   .slider {
     width: 320px;
+    margin: 5px auto;
   }
   .searchbox {
     width: 90%;
+    margin: 0 auto;
+    border-radius: 0 0 5px 5px;
+  }
+
+  .controls {
+    border-radius: 5px 5px 0 0;
+    margin: 0 auto;
+    bottom: 0;
   }
 }
