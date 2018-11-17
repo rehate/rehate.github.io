@@ -12,7 +12,7 @@ body {
 .searchbox {
   padding: 10px;
   margin: 10px auto;
-  width: 400px;
+  max-width: 400px;
   background: rgba(0,0,0,.2);
   border-radius: 10px;
   box-shadow: 0 1px 1px rgba(0,0,0,.4) inset, 0 1px 0 rgba(255,255,255,.2);
@@ -69,7 +69,7 @@ body {
   border-color: transparent #d83c3c transparent transparent;
   position: relative;
   top: -4px;
-  left: -15px;
+  left: -13px;
 }
 
 .searchbox__search:hover:before{
@@ -142,9 +142,10 @@ body {
 .slider__description {
   margin-top: 15px;
   text-align: justify;
+  word-wrap: break-word;
   font: bold 15px 'lucida sans', 'Tahoma';
   overflow: hidden;
-  height: 140px;
+  height: 120px;
   width: 300px;
 }
 
@@ -153,9 +154,9 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  margin-top: 40px;
   padding: 15px;
   margin: 0 auto;
+  margin-bottom: 20px;
   background: rgba(0,0,0,.2);
   border-radius: 10px;
   box-shadow: 0 1px 1px rgba(0,0,0,.4) inset, 0 1px 0 rgba(255,255,255,.2);
@@ -220,20 +221,23 @@ body {
   background: #d8c83c; 
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1450px) {
   .slider {
     width: 1040px;
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1080px) {
   .slider {
     width: 680px;
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 740px) {
   .slider {
     width: 320px;
+  }
+  .searchbox {
+    width: 90%;
   }
 }

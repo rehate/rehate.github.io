@@ -5,8 +5,8 @@ class Controls {
     const sliderLine = document.querySelector(".slider__line");
     const nums = document.querySelectorAll(".controls__num");
     function calcShift() {
-      shift = (document.body.getBoundingClientRect().width<=730) ? 360 : 
-      (document.body.getBoundingClientRect().width<=1090) ? 720 :
+      shift = (document.body.getBoundingClientRect().width<=600) ? 360 : 
+      (document.body.getBoundingClientRect().width<=740) ? 720 :
       (document.body.getBoundingClientRect().width<=1450) ? 1080 :
       1440;
       currentPos = Math.round(currentPos/shift)*shift;
