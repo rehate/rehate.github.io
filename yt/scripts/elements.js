@@ -37,8 +37,7 @@ class UI {
       let slide = document.createElement("div");
       slide.setAttribute('class', 'slider__slide');
       slide.innerHTML = `
-      <img class="slider__image" src="${item.snippet.thumbnails.high.url}" alt="">
-        <div class="slider__header">
+        <div class="slider__header" style="background: url(${item.snippet.thumbnails.medium.url})">
           <div class="slider__wrapper">
             <a class="slider__link" href="https://www.youtube.com/watch?v=${item.id}" target="_blank">${item.snippet.title}</a>
           </div>

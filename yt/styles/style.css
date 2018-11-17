@@ -5,17 +5,14 @@
 
 body {
   height: 100%;
-  min-width: 470px;
-  min-height: 730px;
+  width: 100%;
   background-image: url('../images/background.png');
-  padding: 20px 0;
 }
 
 .searchbox {
-  width: 440px;
-  margin-top: 40px;
-  padding: 15px;
-  margin: 0 auto;
+  padding: 10px;
+  margin: 10px auto;
+  width: 400px;
   background: rgba(0,0,0,.2);
   border-radius: 10px;
   box-shadow: 0 1px 1px rgba(0,0,0,.4) inset, 0 1px 0 rgba(255,255,255,.2);
@@ -24,14 +21,13 @@ body {
 }
 
 .searchbox__input {
-    width: 330px;
-    height: 20px;
-    padding: 10px 5px; 
-    font: bold 15px 'lucida sans', 'Tahoma';
-    border: none;
-    background: #eee;
-    border-radius: 3px 0 0 3px;
-    text-transform: uppercase;     
+  height: 20px;
+  padding: 10px 15px 10px 5px; 
+  font: bold 15px 'lucida sans', 'Tahoma';
+  border: none;
+  background: #eee;
+  border-radius: 3px 0 0 3px;
+  width: 100%;
 }
 
 .searchbox__input:focus {
@@ -45,7 +41,7 @@ body {
     padding: 0;
     cursor: pointer;
     height: 40px;
-    width: 110px;
+    flex: 110px;
     font: bold 15px/40px 'lucida sans', 'Tahoma';
     color: #fff;
     background: #d83c3c;
@@ -73,7 +69,7 @@ body {
   border-color: transparent #d83c3c transparent transparent;
   position: relative;
   top: -4px;
-  left: -28px;
+  left: -15px;
 }
 
 .searchbox__search:hover:before{
@@ -106,7 +102,6 @@ body {
 
 .slider__slide {
   margin-right: 40px;
-  height: 480px;
   width: 300px;
   background-color: #eee;
   border-radius: 5px;
@@ -116,25 +111,17 @@ body {
   padding: 10px;
 }
 
-.slider__image {
-  width: 100%;
-  background-size: cover;
-  background-position: center;
-
-  border-radius: 5px 5px 0 0;
-}
-
 .slider__header {
-  width: 280px;
-  background-color: #d83c3c;
-  padding: 10px;
-  border-radius: 0 0 5px 5px;
+  width: 320px;
+  height: 180px;
 }
 
 .slider__wrapper {
   text-align: center;
   overflow-y: hidden;
   height: 44px;
+  background: rgba(0,0,0,.6);
+  margin-top: 69px;
 }
 
 .slider__link {
@@ -233,19 +220,19 @@ body {
   background: #d8c83c; 
 }
 
-@media (max-width: 1450px) {
+@media (max-width: 1200px) {
   .slider {
     width: 1040px;
   }
 }
 
-@media (max-width: 1090px) {
+@media (max-width: 900px) {
   .slider {
     width: 680px;
   }
 }
 
-@media (max-width: 730px) {
+@media (max-width: 600px) {
   .slider {
     width: 320px;
   }
