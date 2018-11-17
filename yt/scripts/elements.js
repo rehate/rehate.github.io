@@ -54,8 +54,9 @@ class UI {
           <img src="./images/eye.svg" alt="watchers" height="15px">
           <p>${item.statistics.viewCount}</p>
         </div>
-        <p class="slider__description">${item.snippet.description.substring(0, 180)+'...'}</p>
+        <p class="slider__description">${(function() {if(item.snippet.description.length>150) {return item.snippet.description.substring(0, 150)+'...'} else {return item.snippet.description}})()}</p>
       `
+      /* item.snippet.description.substring(0, 180)+'...' */
       document.querySelector(".slider__line").appendChild(slide);
     });
 
