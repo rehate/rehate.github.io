@@ -14,7 +14,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: '/\.js$/',
+        test: /\.js$/,
         use: [
           {
             loader: 'babel-loader',
@@ -27,6 +27,22 @@ module.exports = {
           },
         ],
         exclude: '/node_modules/',
+      },
+      {
+        test: /\.(png|jpg|gif)$/i,
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+              limit: 8192,
+              name: '../images/[name].[ext]',
+            },
+          },
+        ],
+      },
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader'],
       },
     ],
   },

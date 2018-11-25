@@ -1,3 +1,4 @@
+import './style.css';
 import YouTube from './yt';
 import UI from './ui';
 import activate from './conrols';
