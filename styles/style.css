@@ -1,0 +1,229 @@
+*{
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background-color: #5C6473;
+  background-size: cover;
+  user-select: none;
+}
+
+#map {
+  width: 375px;
+  height: 375px;
+}
+
+.app-wrapper {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.header__controls {
+  font-size: 0;
+}
+
+.header__button {
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border-radius: 4px;
+  box-shadow: none;
+  border: none;
+  background-color: #848C95;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 17px;
+  color: #ffffff;
+  opacity: 0.5;
+  transition-property: opacity;
+  transition-duration: .3s;
+}
+
+.header__button:hover {
+  opacity: 1;
+}
+
+.header__button:first-child {
+  background-image: url('../images/bgBtn.png');
+}
+
+.header__button--width {
+  width: 71px;
+  margin: 0 10px;
+}
+
+.header__button--big {
+  width: 101px;
+  background-color: #72777F;
+}
+
+.header__button--stuck-left {
+  border-radius: 4px 0 0 4px;
+}
+
+.header__button--stuck-right {
+  border-radius: 0 4px 4px 0;
+}
+
+.header__button--active {
+  background-color: #565D67;
+}
+
+.header__search {
+  font-size: 0px;
+}
+
+.header__input {
+  width: 274px;
+  height: 44px;
+  box-sizing: border-box;
+  padding: 15px;
+  border: 1px solid #72777F;
+  border-radius: 4px 0 0 4px;
+  background-color: #848C95;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.header__input::placeholder {
+  color: #ffffff;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.weather {
+  width: 600px;
+  color: #ffffff;
+}
+
+.weather__today {
+  margin-top: 30px;
+}
+
+.weather__location {
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 44px;
+  line-height: 54px;
+  text-transform: uppercase;
+}
+
+.weather__date {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.weather__time {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.weather__date--mini {
+  margin-bottom: 20px;
+  font-size: 22px;
+  line-height: 27px;
+}
+
+.weater__block {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+}
+
+.weather__temperature {
+  font-weight: bold;
+  font-size: 306px;
+  line-height: 323px;
+  display: flex;
+  align-content: flex-end;
+}
+
+.weather__temperature--mini {
+  font-size: 80px;
+  line-height: 98px;
+}
+
+.weater__text--mini {
+  font-size: 200px;
+  line-height: 240px;
+  z-index: 3;
+}
+
+.weather__icon {
+  margin-top: 40px;
+  margin-left: 20px;
+  width: 128px;
+  height: 128px;
+}
+
+.weather__icon--mini {
+  width: 64px;
+  height: 64px;
+  margin-top: 0;
+  margin-left: -10px;
+  background-size: 100%;
+}
+
+.weather__info {
+  margin-left: -30px;
+}
+
+.weather__description {
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 37px;
+}
+
+.weather__preview {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+}
+
+.weather__coming {
+  display: flex;
+  flex-direction: row;
+}
+
+.weather__row {
+  display: flex;
+  flex-direction: row;
+}
+
+.location__map {
+  width: 375px;
+  height: 375px;
+  margin-top: 120px;
+  border-radius: 30px;
+  background-color: #ffffff;
+  overflow: hidden;
+}
+
+.location__text {
+  text-align: right;
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  color: #ffffff;
+}
+
+.location__coords {
+  margin-top: 40px;
+}
