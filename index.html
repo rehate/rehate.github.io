@@ -9,8 +9,7 @@
   <link rel="stylesheet" href="./styles/style.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:500,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v1.6.0/mapbox-gl.js"></script>
-  <link href="https://api.tiles.mapbox.com/mapbox-gl-js/v1.6.0/mapbox-gl.css" rel="stylesheet" />
+  <link href='https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.css' rel='stylesheet' />
   <title>Fancy Weather</title>
 </head>
 
@@ -18,22 +17,25 @@
   <div class="app-wrapper">
     <header class="header">
       <div class="header__controls">
-        <button class="header__button"><i class="fa fa-refresh"></i></button>
+        <button class="header__button btn-refresh"><i class="fa fa-refresh"></i></button>
         <button class="header__button header__button--width">EN <i class="fa fa-sort-down"></i></button>
-        <button class="header__button header__button--stuck-left">&deg F</button>
-        <button class="header__button header__button--stuck-right header__button--active">&deg C</button>
+        <button class="header__button header__button--stuck-left btn-degr-F">&deg F</button>
+        <button class="header__button header__button--stuck-right header__button--active btn-degr-C">&deg C</button>
       </div>
       <div class="header__search">
         <input class="header__input" type="text" placeholder="Search city or ZIP">
-        <button class="header__button header__button--big header__button--stuck-right" type="button">Search</button>
+        <button class="header__button header__button--big header__button--stuck-right btn-search"
+          type="button">Search</button>
       </div>
     </header>
     <main>
       <div class="weather">
         <div class="weather__today">
           <h3 class="weather__location">--, --</h3>
-          <span class="weather__date">-- -- --</span>
-          <span class="weather__time">--:--</span>
+          <p class="weather__timeline">
+            <span class="weather__date">-- -- --</span>
+            <span class="weather__time">--:--</span>
+          </p>
           <div class="weater__block">
             <div class="weather__temperature">
               <span class="weater__text">--</span><span class="weater__text weater__text--mini"> &deg</span></div>
@@ -84,15 +86,6 @@
     </main>
   </div>
   <script src="./dist/bundle.js"></script>
-  <script>
-    mapboxgl.accessToken = 'pk.eyJ1IjoicmVoYXRlIiwiYSI6ImNqdXUzaXVtZzA4ZngzeXFlNjlmbjZ3N28ifQ.7D4pwodVuoUWC8ZoFIq-nA';
-    var map = new mapboxgl.Map({
-      container: 'map', // container id
-      style: 'mapbox://styles/mapbox/streets-v11', // stylesheet location
-      center: [27.56, 53.90], // starting position [lng, lat] 53.9000,27.5667
-      zoom: 11 // starting zoom
-    });
-  </script>
 </body>
 
 </html>
